@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		718A68D562CAF891E9B59C00 /* Pods_BlueBirdy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B9AB815CE8F4AC1102F5DF /* Pods_BlueBirdy.framework */; };
+		E38285FE1E5CFEA300EFE222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38285FD1E5CFEA300EFE222 /* AppDelegate.swift */; };
+		E38286001E5CFEA300EFE222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38285FF1E5CFEA300EFE222 /* ViewController.swift */; };
+		E38286031E5CFEA300EFE222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38286011E5CFEA300EFE222 /* Main.storyboard */; };
+		E38286051E5CFEA300EFE222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E38286041E5CFEA300EFE222 /* Assets.xcassets */; };
+		E38286081E5CFEA300EFE222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38286061E5CFEA300EFE222 /* LaunchScreen.storyboard */; };
+		E38286101E5D01BC00EFE222 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E382860F1E5D01BC00EFE222 /* LogInViewController.swift */; };
+		E38286151E5D1BE000EFE222 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38286141E5D1BE000EFE222 /* User.swift */; };
+		E38286171E5D1BF100EFE222 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38286161E5D1BF100EFE222 /* Tweet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04B9AB815CE8F4AC1102F5DF /* Pods_BlueBirdy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueBirdy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C6E730ABF4D6F70C14E236A /* Pods-BlueBirdy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueBirdy.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueBirdy/Pods-BlueBirdy.release.xcconfig"; sourceTree = "<group>"; };
+		7DB260CA69A97E05F161B2F7 /* Pods-BlueBirdy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueBirdy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueBirdy/Pods-BlueBirdy.debug.xcconfig"; sourceTree = "<group>"; };
+		E38285FA1E5CFEA300EFE222 /* BlueBirdy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueBirdy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E38285FD1E5CFEA300EFE222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E38285FF1E5CFEA300EFE222 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E38286021E5CFEA300EFE222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E38286041E5CFEA300EFE222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E38286071E5CFEA300EFE222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E38286091E5CFEA300EFE222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E382860F1E5D01BC00EFE222 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		E38286141E5D1BE000EFE222 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E38286161E5D1BF100EFE222 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E38285F71E5CFEA300EFE222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718A68D562CAF891E9B59C00 /* Pods_BlueBirdy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5772D40C516784F491113934 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DB260CA69A97E05F161B2F7 /* Pods-BlueBirdy.debug.xcconfig */,
+				4C6E730ABF4D6F70C14E236A /* Pods-BlueBirdy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE33CFFE2F89B4E6B5F16611 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04B9AB815CE8F4AC1102F5DF /* Pods_BlueBirdy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E38285F11E5CFEA300EFE222 = {
+			isa = PBXGroup;
+			children = (
+				E38285FC1E5CFEA300EFE222 /* BlueBirdy */,
+				E38285FB1E5CFEA300EFE222 /* Products */,
+				5772D40C516784F491113934 /* Pods */,
+				BE33CFFE2F89B4E6B5F16611 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E38285FB1E5CFEA300EFE222 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E38285FA1E5CFEA300EFE222 /* BlueBirdy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E38285FC1E5CFEA300EFE222 /* BlueBirdy */ = {
+			isa = PBXGroup;
+			children = (
+				E38286131E5D1BB800EFE222 /* API */,
+				E38286121E5D1BA400EFE222 /* View Controllers */,
+				E38286111E5D1B9B00EFE222 /* Models */,
+				E38285FD1E5CFEA300EFE222 /* AppDelegate.swift */,
+				E38286011E5CFEA300EFE222 /* Main.storyboard */,
+				E38286041E5CFEA300EFE222 /* Assets.xcassets */,
+				E38286061E5CFEA300EFE222 /* LaunchScreen.storyboard */,
+				E38286091E5CFEA300EFE222 /* Info.plist */,
+			);
+			path = BlueBirdy;
+			sourceTree = "<group>";
+		};
+		E38286111E5D1B9B00EFE222 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E38286141E5D1BE000EFE222 /* User.swift */,
+				E38286161E5D1BF100EFE222 /* Tweet.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E38286121E5D1BA400EFE222 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E38285FF1E5CFEA300EFE222 /* ViewController.swift */,
+				E382860F1E5D01BC00EFE222 /* LogInViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E38286131E5D1BB800EFE222 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E38285F91E5CFEA300EFE222 /* BlueBirdy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E382860C1E5CFEA300EFE222 /* Build configuration list for PBXNativeTarget "BlueBirdy" */;
+			buildPhases = (
+				4E04604D52389C37434CB3E1 /* [CP] Check Pods Manifest.lock */,
+				E38285F61E5CFEA300EFE222 /* Sources */,
+				E38285F71E5CFEA300EFE222 /* Frameworks */,
+				E38285F81E5CFEA300EFE222 /* Resources */,
+				E6C539FA47926A5B3E79CA60 /* [CP] Embed Pods Frameworks */,
+				5249C9991A00D637B094D6AA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueBirdy;
+			productName = BlueBirdy;
+			productReference = E38285FA1E5CFEA300EFE222 /* BlueBirdy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E38285F21E5CFEA300EFE222 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Cong Tam Quang Hoang";
+				TargetAttributes = {
+					E38285F91E5CFEA300EFE222 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E38285F51E5CFEA300EFE222 /* Build configuration list for PBXProject "BlueBirdy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E38285F11E5CFEA300EFE222;
+			productRefGroup = E38285FB1E5CFEA300EFE222 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E38285F91E5CFEA300EFE222 /* BlueBirdy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E38285F81E5CFEA300EFE222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38286081E5CFEA300EFE222 /* LaunchScreen.storyboard in Resources */,
+				E38286051E5CFEA300EFE222 /* Assets.xcassets in Resources */,
+				E38286031E5CFEA300EFE222 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E04604D52389C37434CB3E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5249C9991A00D637B094D6AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueBirdy/Pods-BlueBirdy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6C539FA47926A5B3E79CA60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueBirdy/Pods-BlueBirdy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E38285F61E5CFEA300EFE222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38286151E5D1BE000EFE222 /* User.swift in Sources */,
+				E38286171E5D1BF100EFE222 /* Tweet.swift in Sources */,
+				E38286001E5CFEA300EFE222 /* ViewController.swift in Sources */,
+				E38285FE1E5CFEA300EFE222 /* AppDelegate.swift in Sources */,
+				E38286101E5D01BC00EFE222 /* LogInViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E38286011E5CFEA300EFE222 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E38286021E5CFEA300EFE222 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E38286061E5CFEA300EFE222 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E38286071E5CFEA300EFE222 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E382860A1E5CFEA300EFE222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E382860B1E5CFEA300EFE222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E382860D1E5CFEA300EFE222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB260CA69A97E05F161B2F7 /* Pods-BlueBirdy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BlueBirdy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.BlueBirdy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E382860E1E5CFEA300EFE222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C6E730ABF4D6F70C14E236A /* Pods-BlueBirdy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BlueBirdy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.BlueBirdy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E38285F51E5CFEA300EFE222 /* Build configuration list for PBXProject "BlueBirdy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E382860A1E5CFEA300EFE222 /* Debug */,
+				E382860B1E5CFEA300EFE222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E382860C1E5CFEA300EFE222 /* Build configuration list for PBXNativeTarget "BlueBirdy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E382860D1E5CFEA300EFE222 /* Debug */,
+				E382860E1E5CFEA300EFE222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E38285F21E5CFEA300EFE222 /* Project object */;
+}
