@@ -23,22 +23,18 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func onLoginButton(_ sender: Any) {
-        let twitterClient = BDBOAuth1SessionManager(baseURL: URL(string:"https://api.twitter.com")!, consumerKey: "XUcGsG6u45mLsWLtY1AoKDfMN", consumerSecret: "9kGq5kZAlyaTZqNzCbiMGb29hDvdOXbOkLs56sTvQwcRrHUnhF")!
-        
-        twitterClient.deauthorize()
-        twitterClient.fetchRequestToken(withPath: "oauth/request_token", method: "GET", callbackURL: URL(string:"BlueBirdyDemo://oauth"), scope: nil, success: {(requestToken: BDBOAuth1Credential?) -> Void in
-            print("I got a token")
+        let twitterClient = BlueBirdyClient.sharedInstance
+        twitterClient.login(success: { 
             
-            let url = URL(string: "https://api.twitter.com/oauth/authorize?oauth_token=\(requestToken!.token!)")
-            UIApplication.shared.open(url!)
+            print("I've logged in successfully ")
+            self.performSegue(withIdentifier: "LoggedIn", sender: nil)
+
+        }) { (error: Error) in
             
-        }) {(error: Error?) -> Void in
-            print("error: \(error?.localizedDescription)")
+            print("Error: \(error.localizedDescription)")
+            
         }
-        
-        
     }
-   
 
     /*
     // MARK: - Navigation
@@ -49,5 +45,4 @@ class LogInViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

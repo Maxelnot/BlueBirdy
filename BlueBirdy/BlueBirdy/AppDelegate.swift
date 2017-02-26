@@ -42,48 +42,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    func application(_ app: UIApplication, openUrl url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool{
         
-        
-        let requestToken = BDBOAuth1Credential(queryString: url.query)
-        let twitterClient = BDBOAuth1SessionManager(baseURL: URL(string:"https://api.twitter.com")!, consumerKey: "XUcGsG6u45mLsWLtY1AoKDfMN", consumerSecret: "9kGq5kZAlyaTZqNzCbiMGb29hDvdOXbOkLs56sTvQwcRrHUnhF")!
-        twitterClient.fetchAccessToken(withPath: "oauth/access_token", method: "POST", requestToken: requestToken, success: {(accessToken: BDBOAuth1Credential?) -> Void in
-            
-            print( "I got the access token")
-            
-            twitterClient.get("1.1/account/verify_credentials.json", parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
-
-                let userDictionary = response as! NSDictionary
-                //print("user: \(user)")
-                
-                let user = User(dictionary: userDictionary)
-                print("name: \(user.name)")
-                print("screenname: \(user.screenName)")
-                print("profile url: \(user.profileUrl)")
-                print("description: \(user.tagLine)")
-                
-                
-            }, failure: { (task: URLSessionDataTask?, error: Error) -> Void in
-                print("error:\(error.localizedDescription)")
-            })
-            twitterClient.get("1.1/statuses/home_timeline.json", parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
-                
-                let dictionaries = response as! [NSDictionary]
-                
-                let tweets = Tweet.tweetsWithArray(dictionaries: dictionaries)
-                
-                for tweet in tweets{
-                    print("\(tweet.text! )")
-                }
-                
-            }, failure: { (task: URLSessionDataTask?, error: Error) in
-                print("error: \(error.localizedDescription)")
-            })
-            
-        }) {(error: Error?) -> Void in
-            print("error: \(error?.localizedDescription)")
-        }
-
+        let twitterClient = BlueBirdyClient.sharedInstance
+        twitterClient.handleOpenUrl(url: url)
         
         return true
     }

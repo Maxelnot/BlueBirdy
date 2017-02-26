@@ -16,6 +16,7 @@
 		E38286101E5D01BC00EFE222 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E382860F1E5D01BC00EFE222 /* LogInViewController.swift */; };
 		E38286151E5D1BE000EFE222 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38286141E5D1BE000EFE222 /* User.swift */; };
 		E38286171E5D1BF100EFE222 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38286161E5D1BF100EFE222 /* Tweet.swift */; };
+		E3E034681E62835A00CED5A4 /* BlueBirdyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E034671E62835A00CED5A4 /* BlueBirdyClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E382860F1E5D01BC00EFE222 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		E38286141E5D1BE000EFE222 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E38286161E5D1BF100EFE222 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		E3E034671E62835A00CED5A4 /* BlueBirdyClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueBirdyClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		E38286131E5D1BB800EFE222 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				E3E034671E62835A00CED5A4 /* BlueBirdyClient.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				TargetAttributes = {
 					E38285F91E5CFEA300EFE222 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GXSP5NDPCZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -249,6 +253,7 @@
 				E38286001E5CFEA300EFE222 /* ViewController.swift in Sources */,
 				E38285FE1E5CFEA300EFE222 /* AppDelegate.swift in Sources */,
 				E38286101E5D01BC00EFE222 /* LogInViewController.swift in Sources */,
+				E3E034681E62835A00CED5A4 /* BlueBirdyClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +375,8 @@
 			baseConfigurationReference = 7DB260CA69A97E05F161B2F7 /* Pods-BlueBirdy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = GXSP5NDPCZ;
 				INFOPLIST_FILE = BlueBirdy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.BlueBirdy;
@@ -383,6 +390,8 @@
 			baseConfigurationReference = 4C6E730ABF4D6F70C14E236A /* Pods-BlueBirdy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = GXSP5NDPCZ;
 				INFOPLIST_FILE = BlueBirdy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.BlueBirdy;
