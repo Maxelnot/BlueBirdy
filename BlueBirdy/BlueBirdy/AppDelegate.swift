@@ -17,6 +17,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if User.savedUser != nil{
+            print("there's current user logged in")
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "TweetsNavigateController")
+            
+            window?.rootViewController = vc
+        }else{
+            print("there's no current user logged in")
+        }
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: User.userDidLogout), object: nil, queue: OperationQueue.main) { (Notification) in
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateInitialViewController()
+            
+            self.window?.rootViewController = vc
+
+            
+        }
+        
         return true
     }
 
@@ -42,10 +62,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func application(_ app: UIApplication, openUrl url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool{
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool{
         
-        let twitterClient = BlueBirdyClient.sharedInstance
-        twitterClient.handleOpenUrl(url: url)
+        print("sasha")
+        BlueBirdyClient.sharedInstance.handleOpenUrl(url: url)
         
         return true
     }

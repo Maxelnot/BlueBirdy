@@ -9,14 +9,15 @@
 /* Begin PBXBuildFile section */
 		718A68D562CAF891E9B59C00 /* Pods_BlueBirdy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B9AB815CE8F4AC1102F5DF /* Pods_BlueBirdy.framework */; };
 		E38285FE1E5CFEA300EFE222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38285FD1E5CFEA300EFE222 /* AppDelegate.swift */; };
-		E38286001E5CFEA300EFE222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38285FF1E5CFEA300EFE222 /* ViewController.swift */; };
 		E38286031E5CFEA300EFE222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38286011E5CFEA300EFE222 /* Main.storyboard */; };
 		E38286051E5CFEA300EFE222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E38286041E5CFEA300EFE222 /* Assets.xcassets */; };
 		E38286081E5CFEA300EFE222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38286061E5CFEA300EFE222 /* LaunchScreen.storyboard */; };
 		E38286101E5D01BC00EFE222 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E382860F1E5D01BC00EFE222 /* LogInViewController.swift */; };
 		E38286151E5D1BE000EFE222 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38286141E5D1BE000EFE222 /* User.swift */; };
 		E38286171E5D1BF100EFE222 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38286161E5D1BF100EFE222 /* Tweet.swift */; };
+		E3B5ADDF1E63A16100B91209 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B5ADDE1E63A16100B91209 /* TweetCell.swift */; };
 		E3E034681E62835A00CED5A4 /* BlueBirdyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E034671E62835A00CED5A4 /* BlueBirdyClient.swift */; };
+		E3E0346A1E62F63F00CED5A4 /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E034691E62F63F00CED5A4 /* TweetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,6 @@
 		7DB260CA69A97E05F161B2F7 /* Pods-BlueBirdy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueBirdy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueBirdy/Pods-BlueBirdy.debug.xcconfig"; sourceTree = "<group>"; };
 		E38285FA1E5CFEA300EFE222 /* BlueBirdy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueBirdy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38285FD1E5CFEA300EFE222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E38285FF1E5CFEA300EFE222 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E38286021E5CFEA300EFE222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E38286041E5CFEA300EFE222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E38286071E5CFEA300EFE222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,7 +33,9 @@
 		E382860F1E5D01BC00EFE222 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		E38286141E5D1BE000EFE222 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E38286161E5D1BF100EFE222 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		E3B5ADDE1E63A16100B91209 /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		E3E034671E62835A00CED5A4 /* BlueBirdyClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueBirdyClient.swift; sourceTree = "<group>"; };
+		E3E034691E62F63F00CED5A4 /* TweetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				E38286121E5D1BA400EFE222 /* View Controllers */,
 				E38286111E5D1B9B00EFE222 /* Models */,
 				E38285FD1E5CFEA300EFE222 /* AppDelegate.swift */,
+				E3B5ADDE1E63A16100B91209 /* TweetCell.swift */,
 				E38286011E5CFEA300EFE222 /* Main.storyboard */,
 				E38286041E5CFEA300EFE222 /* Assets.xcassets */,
 				E38286061E5CFEA300EFE222 /* LaunchScreen.storyboard */,
@@ -110,8 +113,8 @@
 		E38286121E5D1BA400EFE222 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E38285FF1E5CFEA300EFE222 /* ViewController.swift */,
 				E382860F1E5D01BC00EFE222 /* LogInViewController.swift */,
+				E3E034691E62F63F00CED5A4 /* TweetViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -249,9 +252,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E38286151E5D1BE000EFE222 /* User.swift in Sources */,
+				E3B5ADDF1E63A16100B91209 /* TweetCell.swift in Sources */,
 				E38286171E5D1BF100EFE222 /* Tweet.swift in Sources */,
-				E38286001E5CFEA300EFE222 /* ViewController.swift in Sources */,
 				E38285FE1E5CFEA300EFE222 /* AppDelegate.swift in Sources */,
+				E3E0346A1E62F63F00CED5A4 /* TweetViewController.swift in Sources */,
 				E38286101E5D01BC00EFE222 /* LogInViewController.swift in Sources */,
 				E3E034681E62835A00CED5A4 /* BlueBirdyClient.swift in Sources */,
 			);
