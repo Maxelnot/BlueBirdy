@@ -34,7 +34,7 @@ class Tweet: NSObject {
         }
         
         retweetCount = (dictionary["retweet_count"] as? Int) ?? 0
-        
+        favouritesCount = (dictionary["retweet_count"] as? Int) ?? 0
         
     }
     class func tweetsWithArray(dictionaries: [NSDictionary]) -> [Tweet]{
