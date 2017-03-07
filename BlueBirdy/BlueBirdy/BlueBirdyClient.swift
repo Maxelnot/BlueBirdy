@@ -59,6 +59,38 @@ class BlueBirdyClient: BDBOAuth1SessionManager {
         
     }
     
+    func favorite(id: String, success: @escaping () -> (), failure: @escaping (Error) -> ()){
+        post("1.1/favorites/create.json", parameters: ["id": id], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            
+        }) { (task: URLSessionDataTask?, error: Error) in
+            print("Favorite ERROR")
+        }
+    }
+    
+    func unfavorite(id: String, success: @escaping () -> (), failure: @escaping (Error) -> ()){
+        post("1.1/favorites/destroy.json", parameters: ["id": id], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            
+        }) { (task: URLSessionDataTask?, error: Error) in
+            print("unfavorite ERROR")
+        }
+    }
+    
+    func retweet(id: String, success: @escaping () -> (), failure: @escaping (Error) -> ()){
+        post("1.1/statuses/retweet/\(id).json", parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            
+        }) { (task: URLSessionDataTask?, error: Error) in
+            print("retweet ERROR")
+        }
+    }
+
+    func unretweet(id: String, success: @escaping () -> (), failure: @escaping (Error) -> ()){
+        post("1.1/statuses/unretweet/\(id).json", parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            
+        }) { (task: URLSessionDataTask?, error: Error) in
+            print("Unretweet ERROR")
+        }
+    }
+    
     func homeTimeLine(success: @escaping ([Tweet]) -> (), failure: @escaping (Error) -> ()){
         
         get("1.1/statuses/home_timeline.json", parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
@@ -73,6 +105,18 @@ class BlueBirdyClient: BDBOAuth1SessionManager {
             failure(error)
         })
     }
+    
+    func sendTweet(tweetText: String, params: NSDictionary?, completion: @escaping (_ error: Error?) -> ()){
+        
+        post("1.1/statuses/update.json", parameters: params, progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            completion(nil)
+        }) { (task: URLSessionDataTask?,error: Error) in
+            print("Error in sending the tweet")
+            completion(error as Error?)
+        }
+        
+    }
+    
     func currentAcc(success: @escaping  (User) -> (), failure: @escaping (Error) -> ()){
         get("1.1/account/verify_credentials.json", parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
             

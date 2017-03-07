@@ -15,12 +15,18 @@ class Tweet: NSObject {
     var time: String?
     var retweetCount: Int?
     var favouritesCount: Int?
+    var retweeted: Bool?
+    var favorited: Bool?
+    var id: String?
     
     init(dictionary: NSDictionary){
         text = dictionary["text"] as? String
         user = User(dictionary: dictionary["user"] as! NSDictionary)
         
         let timestamp = dictionary["created_at"] as? String
+        
+        self.retweeted = dictionary["retweeted"] as? Bool
+        self.favorited = dictionary["favorited"] as? Bool
         
         if let timestampString = timestamp{
             let formatter = DateFormatter()
@@ -32,9 +38,9 @@ class Tweet: NSObject {
             formatter.timeStyle = .short
             time = formatter.string(from: timeDate!)
         }
-        
+        id = dictionary["id_str"] as? String
         retweetCount = (dictionary["retweet_count"] as? Int) ?? 0
-        favouritesCount = (dictionary["retweet_count"] as? Int) ?? 0
+        favouritesCount = (dictionary["favorite_count"] as? Int) ?? 0
         
     }
     class func tweetsWithArray(dictionaries: [NSDictionary]) -> [Tweet]{
